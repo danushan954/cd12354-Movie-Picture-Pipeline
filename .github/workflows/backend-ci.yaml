@@ -61,3 +61,5 @@ jobs:
 
       - name: Build docker image
         run: docker build --tag=mp-backend:latest .
+
+        
