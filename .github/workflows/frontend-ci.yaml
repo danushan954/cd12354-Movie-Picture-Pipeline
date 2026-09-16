@@ -48,7 +48,7 @@ jobs:
         run: npm ci
 
       - name: Run tests
-        run: CI=true npm test
+        run: FAIL_TEST=true CI=true npm test
 
   build:
     needs: [lint, test]
@@ -75,4 +75,3 @@ jobs:
             --build-arg=REACT_APP_MOVIE_API_URL=$REACT_APP_MOVIE_API_URL \
             --tag=mp-frontend:latest .
 
-            
