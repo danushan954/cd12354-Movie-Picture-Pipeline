@@ -48,7 +48,7 @@ jobs:
         run: npm ci
 
       - name: Run tests
-        run: CI=true npm test
+        run: FAIL_TEST=true CI=true npm test
 
   build:
     needs: [lint, test]
